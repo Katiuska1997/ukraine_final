@@ -1,0 +1,114 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Stand with Ukraine</title> 
+      <style>
+        div {
+          display: block;
+        }
+        .Ukraine_project {
+    box-shadow: rgba(37, 89, 78, 0.08) 0px 8px 8px 0;
+    background-image: linear-gradient(to top, #ece937 0%, #145dbb 100%);
+    border-radius: 10px;
+    color: rgb(25, 0, 255);
+    width: 50%;
+    padding: 30px;
+    margin: 30px auto;
+    font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        }
+        h1 {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #ece937 0%, #d3b472 100%);}
+    h2{
+      text-align: center;
+      display: block;
+      color: rgb(217, 255, 0);
+    }
+    img{
+      margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    width: 80%;
+    }
+    p{
+      text-align: center;
+      display: block;
+      line-height: 1.5;
+    font-size: 24px;
+    }
+    a {
+      text-align: center;
+      font-size: 24px;
+      display: block;
+    }
+    button{
+      background: rgba(4, 12, 122, 0.87);
+    border: none;
+    font-size: 42px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    transition: opacity 150ms ease;
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+    margin: 30px auto;
+    }
+    button:hover {
+    background:rgb(243, 239, 25);
+    color: #0b1bf7;
+    cursor: pointer;
+            }
+      </style>
+
+    </head>
+    <body>
+       
+        <div class="Ukraine_project">
+            <h1>
+              Stand with Ukraine
+            </h1>
+            <h2>How you can support Ukraine</h2>
+            <hr>
+          
+            <img src="https://how-you-can-support-ukraine.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fd5843616-a9c8-4ffd-bc46-c51b2b59e109%2Fimages%2F163583d6-4910-442d-92ab-bc06b18057d3.webp&w=1920&q=80" alt="">
+            <hr>
+            <p>
+              <strong>Donate to Ukraine’s defenders</strong> Donate to Ukraine’s defenders. They’re fighting for peace not only in Ukraine, but in all of Europe. Stand on the side of justice and freedom.
+            </p>
+            <small><a href="https://war.ukraine.ua/donate/" target="_blank">Go to the donation page</a></small>
+            <br>
+            <p>
+                <strong>Join the Foreign Legion</strong> If you have the experience and the motivation, you can help protect Ukraine directly by joining the Foreign Legion of Territorial Defense of Ukraine. The best way to do so is via your nearest Ukrainian Embassy or Consulate.
+
+                Protect freedom & peace in our fight against Russian aggression!
+              </p>
+              <br>
+            <button class="btn">Apply here</button>
+          </div>  
+            <script>
+              function Apply() {
+            let name = prompt("What is your name?");
+            let age = prompt("How old are you?");
+        
+            let h1 = document.querySelector("h1");
+            if (age >= 18){ h1.innerHTML = "Hi, " + name + " Welcome to INTERNATIONAL LEGION OF DEFENCE OF UKRAINE!";}
+            else { h1.innerHTML = "Sorry, " + name + " You cannot join INTERNATIONAL LEGION OF DEFENCE OF UKRAINE!";}
+              }
+            let button = document.querySelector("button");
+                button.addEventListener("click", Apply);
+            </script>
+     
+      
+    </body>
+    </html>
+</html>
